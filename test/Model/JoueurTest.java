@@ -9,13 +9,6 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 public class JoueurTest {
 
     @Test
-    public void autourDuJoureur1(){
-        Joueur joueur = new Joueur();
-        boolean joueur1 = true;
-        assertTrue(joueur.autourde(joueur1));
-    }
-
-    @Test
     public void joueurPose(){
         Joueur joueur = new Joueur();
         boolean joueur1 = true;
