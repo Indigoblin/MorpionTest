@@ -1,6 +1,5 @@
 package Model;
 
-
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertFalse;
@@ -14,15 +13,13 @@ public class JoueurTest {
         Joueur joueur = new Joueur();
         boolean joueur1 = true;
         assertFalse(joueur.autourde(false));
-
     }
 
-    //@Test
-    //public void autourDuJoureur2(){
-    //    Joueur joueur = new Joueur();
-    //    boolean joueur2 = false;
-//
-    //}
+    @Test
+    public void autourDuJoureur2(){
+        Joueur joueur = new Joueur();
+        boolean joueur2 = false;
+    }
 //
     //@Test
     //public void joueurPose(){
@@ -39,14 +36,14 @@ public class JoueurTest {
     @Test
     public void joueurPerd(){
         Joueur joueur = new Joueur();
-        boolean joueur1 = false;
+        boolean joueur1 = true;
         assertTrue(joueur.Perdu(true));
     }
 
     @Test
     public void joueurGagne(){
         Joueur joueur = new Joueur();
-        boolean joueur1 = true;
+        boolean joueur1 = false;
         assertFalse(joueur.gagne(false));
     }
 
