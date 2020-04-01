@@ -12,39 +12,42 @@ public class JoueurTest {
     public void autourDuJoureur1(){
         Joueur joueur = new Joueur();
         boolean joueur1 = true;
-        assertFalse(joueur.autourde(false));
+        assertTrue(joueur.autourde(joueur1));
     }
 
     @Test
     public void autourDuJoureur2(){
         Joueur joueur = new Joueur();
         boolean joueur2 = false;
+        assertFalse(joueur.autourde(joueur2));
     }
-//
-    //@Test
-    //public void joueurPose(){
-    //    Joueur joueur = new Joueur();
-//
-    //}
-//
-    //@Test
-    //public void joueurNePeuxPasJouer(){
-    //    Joueur joueur = new Joueur();
-//
-    //}
+
+    @Test
+    public void joueurPose(){
+        Joueur joueur = new Joueur();
+        boolean joueur1 = true;
+        assertTrue(joueur.pose(joueur1));
+    }
+
+    @Test
+    public void joueurNePeuxPasJouer(){
+        Joueur joueur = new Joueur();
+        boolean joueur2 = false;
+        assertFalse(joueur.pose(joueur2));
+    }
 
     @Test
     public void joueurPerd(){
         Joueur joueur = new Joueur();
         boolean joueur1 = true;
-        assertTrue(joueur.Perdu(true));
+        assertTrue(joueur.Perdu(joueur1));
     }
 
     @Test
     public void joueurGagne(){
         Joueur joueur = new Joueur();
         boolean joueur1 = false;
-        assertFalse(joueur.gagne(false));
+        assertFalse(joueur.gagne(joueur1));
     }
 
 }
