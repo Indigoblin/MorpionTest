@@ -16,13 +16,6 @@ public class JoueurTest {
     }
 
     @Test
-    public void autourDuJoureur2(){
-        Joueur joueur = new Joueur();
-        boolean joueur2 = false;
-        assertFalse(joueur.autourde(joueur2));
-    }
-
-    @Test
     public void joueurPose(){
         Joueur joueur = new Joueur();
         boolean joueur1 = true;
@@ -32,8 +25,8 @@ public class JoueurTest {
     @Test
     public void joueurNePeuxPasJouer(){
         Joueur joueur = new Joueur();
-        boolean joueur2 = false;
-        assertFalse(joueur.pose(joueur2));
+        boolean joueur1 = false;
+        assertFalse(joueur.pose(joueur1));
     }
 
     @Test
