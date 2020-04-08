@@ -14,7 +14,7 @@ public class Plateau {
         for (int x = 0; x < sizeBoard; x++) {
             for (int y=0; y < sizeBoard; y++) {
                 // caseBoard représente les pions dans les cases du plateau, ici, c'est nul donc le plateau est vide
-                caseBoard[x][y] = null;gi
+                caseBoard[x][y] = null;
             }
         }
     }
