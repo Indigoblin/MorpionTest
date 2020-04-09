@@ -12,4 +12,8 @@ public class Plateau {
             }
         }
     }
+
+    public int returnCase(int i, int i1) {
+        return i+i1;
+    }
 }
