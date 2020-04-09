@@ -13,6 +13,7 @@ public class PlateauTest {
     @Test
     public void plateauEstVide(){
         Plateau plateau = new Plateau();
+
     }
 
     @Test
